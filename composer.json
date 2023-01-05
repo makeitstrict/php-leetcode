@@ -32,6 +32,6 @@
         "symfony/console": "^5.4",
         "symfony/filesystem": "^5.4",
         "symfony/string": "^5.4",
-        "vimeo/psalm": "~5.2"
+        "vimeo/psalm": "~5.4"
     }
 }
