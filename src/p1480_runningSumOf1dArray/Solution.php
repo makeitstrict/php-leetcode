@@ -20,6 +20,7 @@ class Solution
 
         return array_map(
             static function (int $value) use (&$runningSum): int {
+                assert(is_int($runningSum));
                 $runningSum += $value;
 
                 return $value + ($runningSum - $value);
