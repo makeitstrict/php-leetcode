@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace serhioli\leetcode\tests\unit\p234_palindromeLinkedList;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use serhioli\leetcode\p234_palindromeLinkedList\ListNode;
 use serhioli\leetcode\p234_palindromeLinkedList\Solution;
@@ -18,41 +19,43 @@ final class SolutionTest extends TestCase
         $this->assertSame(0, $node->val);
     }
 
-    /**
-     * @depends      testListNode
-     * @dataProvider dataProvider
-     */
+    #[DataProvider('dataProvider')]
     public function testIsSolved(ListNode $head, bool $expectedResult): void
     {
         $solution = new Solution();
 
         $actualResult = $solution->isPalindrome($head);
 
-        $this->assertEquals($expectedResult, $actualResult);
+        static::assertEquals($expectedResult, $actualResult);
     }
 
-    public function dataProvider(): array
+    public static function dataProvider(): array
     {
         return [
             [
-                $this->buildForSequence([1, 2, 1]), true,
+                static::buildForSequence([1, 2, 1]),
+                true,
             ],
             [
-                $this->buildForSequence([1, 2, 2, 1]), true,
+                static::buildForSequence([1, 2, 2, 1]),
+                true,
             ],
             [
-                $this->buildForSequence([1, 2, 3, 1]), false,
+                static::buildForSequence([1, 2, 3, 1]),
+                false,
             ],
             [
-                $this->buildForSequence([-1, 2, 1]), false,
+                static::buildForSequence([-1, 2, 1]),
+                false,
             ],
             [
-                $this->buildForSequence([1, 0]), false,
+                static::buildForSequence([1, 0]),
+                false,
             ],
         ];
     }
 
-    protected function buildForSequence(array $seq): ListNode
+    protected static function buildForSequence(array $seq): ListNode
     {
         $previous = null;
         foreach (array_reverse($seq) as $value) {

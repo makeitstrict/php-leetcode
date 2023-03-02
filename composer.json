@@ -5,8 +5,8 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "serhioli\\leetcode\\": "src/",
-            "serhioli\\leetcode\\tests\\": "tests/"
+            "serhioli\\leetcode\\": "./src/",
+            "serhioli\\leetcode\\tests\\": "./tests/"
         }
     },
     "authors": [
@@ -17,7 +17,7 @@
     ],
     "config": {
         "platform": {
-            "php": "8.0"
+            "php": "8.2"
         },
         "sort-packages": true,
         "allow-plugins": {
@@ -25,13 +25,13 @@
         }
     },
     "require": {
-        "php": ">=8.0",
-        "infection/infection": "~0.26.16",
-        "laminas/laminas-code": "^4.7",
-        "phpunit/phpunit": "~9.5",
-        "symfony/console": "^5.4",
-        "symfony/filesystem": "^5.4",
-        "symfony/string": "^5.4",
-        "vimeo/psalm": "~5.6"
+        "php": ">=8.1",
+        "infection/infection": "~0",
+        "laminas/laminas-code": "~4.0",
+        "phpunit/phpunit": "~10.0",
+        "symfony/console": "~6.0",
+        "symfony/filesystem": "~6.0",
+        "symfony/string": "~6.0",
+        "vimeo/psalm": "~5.0"
     }
 }
