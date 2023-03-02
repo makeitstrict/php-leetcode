@@ -4,25 +4,24 @@ declare(strict_types=1);
 
 namespace serhioli\leetcode\tests\unit\p1480_runningSumOf1dArray;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use serhioli\leetcode\p1480_runningSumOf1dArray\Solution;
 
 final class SolutionTest extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
+    #[DataProvider('dataProvider')]
     public function testIsSolved(array $nums, array $expectedResult): void
     {
         $solution = new Solution();
 
         $actualResult = $solution->runningSum($nums);
 
-        $this->assertSameSize($nums, $actualResult);
-        $this->assertEquals($expectedResult, $actualResult);
+        static::assertSameSize($nums, $actualResult);
+        static::assertEquals($expectedResult, $actualResult);
     }
 
-    public function dataProvider(): array
+    public static function dataProvider(): array
     {
         return [
             [

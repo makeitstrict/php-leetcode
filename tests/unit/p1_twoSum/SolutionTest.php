@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace serhioli\leetcode\tests\unit\p1_twoSum;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use serhioli\leetcode\p1_twoSum\Solution;
 
 final class SolutionTest extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
+    #[DataProvider('dataProvider')]
     public function testIsSolved(array $nums, int $target, ?array $expectedResult): void
     {
         $solution = new Solution();
@@ -19,16 +18,16 @@ final class SolutionTest extends TestCase
         $actualResult = $solution->twoSum($nums, $target);
 
         if (null === $expectedResult) {
-            $this->assertNull($actualResult);
+            static::assertNull($actualResult);
 
             return;
         }
 
-        $this->assertIsArray($actualResult);
-        $this->assertEqualsCanonicalizing($expectedResult, $actualResult);
+        static::assertIsArray($actualResult);
+        static::assertEqualsCanonicalizing($expectedResult, $actualResult);
     }
 
-    public function dataProvider(): array
+    public static function dataProvider(): array
     {
         return [
             [
