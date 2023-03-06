@@ -18,7 +18,7 @@ final class SolutionTest extends TestCase
     public static function dataProvider(): array
     {
         return [
-            1,
+            [1],
         ];
     }
 }
