@@ -8,6 +8,6 @@ class Solution
 {
     public function runningSum(int $value): int
     {
-        return 0;
+        return $value;
     }
 }
