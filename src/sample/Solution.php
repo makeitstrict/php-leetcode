@@ -6,7 +6,7 @@ namespace serhioli\leetcode\sample;
 
 class Solution
 {
-    public function runningSum(int $value): int
+    public function test(int $value): int
     {
         return $value;
     }
