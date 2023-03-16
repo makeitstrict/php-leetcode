@@ -1,7 +1,7 @@
 {
     "name": "serhioli/leetcode",
     "description": "Solved problems for leetcode",
-    "license": "Unlicense",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
