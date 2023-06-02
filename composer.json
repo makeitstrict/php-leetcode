@@ -27,7 +27,7 @@
     "require": {
         "php": ">=8.1",
         "infection/infection": "~0",
-        "phpunit/phpunit": "~10.1",
+        "phpunit/phpunit": "~10.2",
         "vimeo/psalm": "~5.12"
     }
 }
