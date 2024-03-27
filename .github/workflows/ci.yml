@@ -14,16 +14,3 @@ jobs:
   code-ql:
     needs: [ test ]
     uses: accuracode/workflow-continuous-integration/.github/workflows/code-quality.yml@main
-
-  qodana:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Checkout'
-        uses: actions/checkout@v4
-
-      - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@main
-        with:
-          pr-mode: ${{ github.event_name == 'pull_request' }}
-        env:
-          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}

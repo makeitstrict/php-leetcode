@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         bootstrap="tests/bootstrap.php"
-         colors="true"
-         executionOrder="random"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
-         cacheDirectory="tests/_output/phpunit/cache"
->
-    <testsuites>
-        <testsuite name="unit">
-            <directory>tests/unit</directory>
-        </testsuite>
-    </testsuites>
-    <logging>
-        <junit outputFile="tests/_output/phpunit/logs/junit.xml"/>
-    </logging>
-    <coverage>
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
-        <report>
-            <clover outputFile="tests/_output/phpunit/coverage/clover.xml"/>
-        </report>
-    </coverage>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="tests/bootstrap.php" colors="true" executionOrder="random" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.0/phpunit.xsd" cacheDirectory="tests/_output/phpunit/cache">
+  <testsuites>
+    <testsuite name="unit">
+      <directory>tests/unit</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <junit outputFile="tests/_output/phpunit/logs/junit.xml"/>
+  </logging>
+  <coverage>
+    <report>
+      <clover outputFile="tests/_output/phpunit/coverage/clover.xml"/>
+    </report>
+  </coverage>
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </source>
 </phpunit>
