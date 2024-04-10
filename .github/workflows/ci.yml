@@ -9,8 +9,8 @@ on:
 
 jobs:
   test:
-    uses: accuracode/workflow-continuous-integration/.github/workflows/testing.yml@main
+    uses: makeitstrict/actions/.github/workflows/testing.yml@main
 
   code-ql:
     needs: [ test ]
-    uses: accuracode/workflow-continuous-integration/.github/workflows/code-quality.yml@main
+    uses: makeitstrict/actions/.github/workflows/code-quality.yml@main
