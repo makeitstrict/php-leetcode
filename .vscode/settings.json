@@ -1,0 +1,19 @@
+{
+    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.run": "onType",
+    "phpcs.enable": true,
+    "phpcs.standard": "PSR2",
+    "phpmd.enable": true,
+    "phpmd.rules": "@psr2",
+    "phpcbf.enable": true,
+    "phpcbf.standard": "PSR2",
+    "phpfmt.enable": true,
+    "phpfmt.psr2": true,
+    "phpfmt.passes": [
+        "AlignDoubleArrow",
+        "AlignEquals"
+    ],
+    "phpfmt.exclude": [
+        "phpcsfixer"
+    ]
+}
