@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6181a0e3281c8ca3d4eae7415688ef82",
+    "content-hash": "01099c6e324770a5ffb46f46a6c4ba1f",
     "packages": [],
     "packages-dev": [
         {
@@ -1411,20 +1411,20 @@
         },
         {
             "name": "psalm/phar",
-            "version": "5.23.1",
+            "version": "6.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/phar.git",
-                "reference": "07bb50acefdaf7b663087186f86d47542a9b1622"
+                "reference": "a0297cede8f1703f93372a77e57d8c959863022b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/phar/zipball/07bb50acefdaf7b663087186f86d47542a9b1622",
-                "reference": "07bb50acefdaf7b663087186f86d47542a9b1622",
+                "url": "https://api.github.com/repos/psalm/phar/zipball/a0297cede8f1703f93372a77e57d8c959863022b",
+                "reference": "a0297cede8f1703f93372a77e57d8c959863022b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^8.2"
             },
             "conflict": {
                 "vimeo/psalm": "*"
@@ -1440,9 +1440,9 @@
             "description": "Composer-based Psalm Phar",
             "support": {
                 "issues": "https://github.com/psalm/phar/issues",
-                "source": "https://github.com/psalm/phar/tree/5.23.1"
+                "source": "https://github.com/psalm/phar/tree/6.9.3"
             },
-            "time": "2024-03-11T20:43:33+00:00"
+            "time": "2025-03-20T11:09:31+00:00"
         },
         {
             "name": "psr/container",
@@ -3626,5 +3626,5 @@
     "platform-overrides": {
         "php": "8.3"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
