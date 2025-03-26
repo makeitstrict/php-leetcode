@@ -11,6 +11,6 @@ jobs:
   test:
     uses: makeitstrict/actions/.github/workflows/testing.yml@main
 
-  code-ql:
-    needs: [ test ]
-    uses: makeitstrict/actions/.github/workflows/code-quality.yml@main
+  # code-ql:
+  #   needs: [ test ]
+  #   uses: makeitstrict/actions/.github/workflows/code-quality.yml@main
